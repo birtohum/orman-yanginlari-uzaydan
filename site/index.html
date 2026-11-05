@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orman yangınları uzaydan</title>
+<meta name="description" content="NASA uydularının 2001'den bu yana Türkiye'de gördüğü yangınlar; en büyük yangınların Sentinel-2 ile ölçülen yanmış alanı ve yeniden yeşillenmesi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<header class="bas">
+  <div class="kap">
+    <p class="ust">Uydu verisiyle Türkiye</p>
+    <h1>Orman yangınları uzaydan</h1>
+    <p class="giris">NASA uyduları Türkiye'nin üzerinden her gün geçer ve yeryüzündeki sıcak noktaları kaydeder. Bu sayfa 2001'den bu yana kaydedilen her noktayı haritaya koyuyor; en büyük yangınlarda yanan alanı Avrupa'nın Sentinel-2 uydusuyla ölçüyor.</p>
+    <div class="kancalar" id="kancalar"></div>
+  </div>
+</header>
+
+<main class="kap">
+
+<section id="harita-bolum">
+  <h2>Uydu nerede yangın gördü?</h2>
+  <p class="aciklama">Her nokta, uydunun o yıl bir yangın gördüğü yer. <span class="renk orman"></span> turuncu noktalar orman ve makilikte, <span class="renk tarim"></span> kumlu noktalar tarlada, <span class="renk diger"></span> gri noktalar başka yerlerde.</p>
+  <div class="denetim">
+    <label class="secim">Yıl
+      <select id="yil"></select>
+    </label>
+    <div class="aylar" id="aylar" role="group" aria-label="Ay"></div>
+  </div>
+  <div class="denetim">
+    <label class="kutucuk"><input type="checkbox" id="yalniz-orman"> Yalnız orman ve makilik</label>
+  </div>
+  <div class="harita-kap">
+    <canvas id="harita" aria-label="Türkiye haritası üzerinde yangın tespitleri"></canvas>
+  </div>
+  <p class="not" id="harita-not"></p>
+</section>
+
+<section>
+  <h2>Hangi yıl kaç kez?</h2>
+  <p class="aciklama">Orman ve makilikteki tespitler. Uzun çubuk, uydunun o yıl ormanda çok yangın gördüğü anlamına gelir.</p>
+  <div class="denetim">
+    <div class="sekme" role="group" aria-label="Uydu">
+      <button data-k="V" class="secili">VIIRS · 2012'den</button>
+      <button data-k="M">MODIS · 2001'den</button>
+    </div>
+  </div>
+  <div id="yillik" class="grafik"></div>
+  <p class="not" id="yillik-not"></p>
+</section>
+
+<section>
+  <h2>Uydunun gördüğünün çoğu orman değil</h2>
+  <p class="aciklama">VIIRS'in 2012'den beri Türkiye'de gördüğü noktaların aylara dağılımı. Yaz sonu ve sonbaharda tarlalarda yakılan anız, ormandakinden kat kat fazla nokta bırakır.</p>
+  <div id="aylik" class="grafik"></div>
+</section>
+
+<section>
+  <h2>İl il</h2>
+  <div class="denetim">
+    <label class="secim">Yıl <select id="il-yil"></select></label>
+    <label class="secim ara">İl ara <input id="il-ara" type="search" placeholder="örn. Muğla"></label>
+  </div>
+  <div class="tablo-kap">
+    <table id="iller">
+      <thead><tr><th>İl</th><th class="sayi" data-s="1">Orman ve makilik</th><th class="sayi" data-s="0">Tüm tespitler</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <p class="not" id="il-not"></p>
+</section>
+
+<section id="buyukler">
+  <h2>En büyük yangınlar: önce ve sonra</h2>
+  <p class="aciklama">Yangından önceki ve sonraki Sentinel-2 görüntüleri. Kırmızı alan, uydunun "burası yandı" dediği yer. Alanı biz ölçtük; resmî rakam değildir.</p>
+  <div id="olaylar"></div>
+</section>
+
+<section id="sinirlar">
+  <h2>Bu veriyi okurken</h2>
+  <div class="sinir-izgara">
+    <div><h3>Her nokta bir yangın değil</h3><p>Uydu "burası çevresinden çok sıcak" der. Bu bir orman yangını olabilir; tarlada anız yakma, çöplük, fabrika bacası ya da gaz alevi de olabilir. NASA'nın "sabit kaynak" olarak işaretlediği noktaları (fabrika, rafineri gibi) attık; düşük güvenli tespitleri de. Tarla yakmaları ise sayının büyük kısmını oluşturur. Bu yüzden orman ve makilik payı ayrıca gösteriliyor.</p></div>
+    <div><h3>Piksel büyüklüğü</h3><p>VIIRS her noktayı yaklaşık 375 m × 375 m'lik bir kare olarak görür, MODIS 1 km × 1 km. Büyük bir yangın yüzlerce nokta bırakır, küçük bir yangın hiç görülmeyebilir. Nokta sayısı yanan alanı göstermez; aynı yer birkaç geçişte tekrar sayılabilir.</p></div>
+    <div><h3>Bulut ve duman</h3><p>Kalın bulut altındaki yangını uydu göremez. Sentinel-2 ölçümünde bulutlu pikselleri saymadık; bu yüzden verilen yanmış alan bir alt sınırdır. Kalın duman da görüntüleri bozabilir; yangından en az birkaç gün sonraki açık bir günü seçtik.</p></div>
+    <div><h3>Resmî istatistikle farkı</h3><p>Orman Genel Müdürlüğü (OGM) yangın sayısını ve yanan alanı sahadaki kayıtlardan verir. Uydunun sayısı ile OGM'nin sayısı aynı şeyi ölçmez: uydu noktası sayar, OGM yangın olayı sayar ve yalnız orman sayılan alanları kapsar. Bizim hektarımız da uydu eşiğine bağlıdır. İki kaynağın birbirinden farklı çıkması beklenir.</p></div>
+    <div><h3>Orman mı tarla mı?</h3><p>Bir noktanın orman ya da tarla olduğunu ESA WorldCover 2020 haritasından okuduk (çevresinin yarısından fazlası ağaç ya da çalılıksa "orman ve makilik"). Harita 2020 yılına aittir; o tarihten sonra değişen yerler yanlış sınıflanabilir.</p></div>
+    <div><h3>Yeşillenme yeniden ormanlaşma değildir</h3><p>Yangından sonra önce otlar ve çalılar yeşerir. Yeşillik ölçüsü (NDVI) yükseldiğinde orman geri geldi demek değildir; çam ormanının eski hâline dönmesi onlarca yıl sürer.</p></div>
+  </div>
+</section>
+
+<section id="yontem">
+  <h2>Kaynaklar ve yöntem</h2>
+  <ul class="kaynak">
+    <li><b>Yangın noktaları:</b> NASA FIRMS. MODIS (Terra ve Aqua, 2001'den) ve VIIRS (Suomi NPP, 2012'den) ülke yıllık arşivleri; içinde bulunduğumuz yıl için FIRMS'in yakın zaman (NRT) verisi. <a href="https://firms.modaps.eosdis.nasa.gov/">firms.modaps.eosdis.nasa.gov</a></li>
+    <li><b>Yanmış alan:</b> Copernicus Sentinel-2 L2A, Element84 Earth Search (AWS açık veri). dNBR = NBR(önce) − NBR(sonra), NBR = (B8A − B12) / (B8A + B12), 20 m piksel. Ana eşik dNBR ≥ 0,27 (Key ve Benson 2006 sınıflarında "orta-düşük şiddet ve üstü"). Yalnız FIRMS noktalarının 1 km çevresi sayılır; 5 pikselden küçük kümeler gürültü sayılıp atılır.</li>
+    <li><b>Büyük yangınların seçimi:</b> VIIRS noktaları birbirine 1,5 km ve 2 gün içinde ise aynı yangın sayıldı; kümeler kapladıkları alana göre sıralandı ve noktalarının en az %40'ı orman/makilikte olanlar alındı. İsimler ilçe sınırlarından gelir.</li>
+    <li><b>İl ve ilçe sınırları:</b> geoBoundaries (OpenStreetMap). <b>Arazi örtüsü:</b> ESA WorldCover 2020.</li>
+    <li><b>Kod ve veri:</b> <a href="https://github.com/birtohum/orman-yanginlari-uzaydan">github.com/birtohum/orman-yanginlari-uzaydan</a> (Apache-2.0).</li>
+  </ul>
+  <p class="not" id="guncelleme"></p>
+</section>
+
+</main>
+<footer class="kap alt">Veri: NASA FIRMS, Copernicus Sentinel-2 (ESA), ESA WorldCover, geoBoundaries / OpenStreetMap. Bu sayfa resmî bir kaynak değildir.</footer>
+<script src="uygulama.js"></script>
+</body>
+</html>

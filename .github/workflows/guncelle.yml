@@ -1,0 +1,69 @@
+name: Günlük güncelleme
+
+on:
+  schedule:
+    - cron: "15 5 * * *"   # 08:15 Türkiye saati
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: gunluk
+  cancel-in-progress: false
+
+jobs:
+  guncelle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    environment:
+      name: github-pages
+      url: ${{ steps.yayin.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt pytest
+      - name: Ham arşiv önbelleği
+        uses: actions/cache@v4
+        with:
+          path: veri/ham
+          key: firms-ham-v1-${{ github.run_id }}
+          restore-keys: firms-ham-v1-
+      - name: FIRMS yıllık arşivleri ve sınırlar (yalnız eksikler)
+        run: python indir.py
+      - name: Bu yılın tespitleri
+        if: github.event_name != 'push'
+        env:
+          FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
+        run: python guncel.py
+      - run: python tespit.py
+      - run: python uret.py
+      - name: Yeni büyük yangınları Sentinel-2 ile ölç
+        if: github.event_name != 'push'
+        run: python uydu.py --adet 12 && python uret.py
+      - run: python -m pytest -q
+      - name: Değişiklik varsa kaydet
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add veri site
+          if git diff --cached --quiet; then
+            echo "değişiklik yok"
+          else
+            git commit -m "Veri: $(date -u +%F)"
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: yayin
+        uses: actions/deploy-pages@v4

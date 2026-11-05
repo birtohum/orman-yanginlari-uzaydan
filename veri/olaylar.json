@@ -1,0 +1,1048 @@
+[
+ {
+  "bas": "2021-07-28",
+  "son": "2021-08-06",
+  "tespit": 2412,
+  "hucre": 1688,
+  "orman_payi": 0.924,
+  "il": "Antalya",
+  "ilce": "Manavgat",
+  "kutu": [
+   31.27146,
+   36.76606,
+   31.71856,
+   37.06442
+  ],
+  "id": "2021-07-28-manavgat",
+  "once_tarih": "2021-07-20",
+  "sonra_tarih": "2021-08-09",
+  "once_gorunur": 1.0,
+  "sonra_gorunur": 0.995,
+  "yanik_ha": 31886,
+  "ham_yanik_ha": 32074,
+  "esik_ha": {
+   "genis": 42306,
+   "ana": 32074,
+   "orta_yuksek": 20683,
+   "yuksek": 11425
+  },
+  "gorunmez_oran": 0.019,
+  "arama_ha": 61335,
+  "cevre_piksel": 1449630,
+  "gorsel_kutu": [
+   31.2438,
+   36.7372,
+   31.7467,
+   37.093
+  ],
+  "gorsel_boyut": [
+   757,
+   646
+  ],
+  "yesillenme": [
+   {
+    "yil": 2020,
+    "tarih": "2020-07-15",
+    "yanik": 0.644,
+    "cevre": 0.617,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2021,
+    "tarih": "2021-08-09",
+    "hemen_sonra": true,
+    "yanik": 0.306,
+    "cevre": 0.651,
+    "gorunur": 0.995
+   },
+   {
+    "yil": 2022,
+    "tarih": "2022-07-20",
+    "yanik": 0.268,
+    "cevre": 0.607,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2023,
+    "tarih": "2023-07-20",
+    "yanik": 0.372,
+    "cevre": 0.619,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2024,
+    "tarih": "2024-07-29",
+    "yanik": 0.381,
+    "cevre": 0.634,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2025,
+    "tarih": "2025-07-24",
+    "yanik": 0.435,
+    "cevre": 0.64,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2026,
+    "tarih": "2026-07-19",
+    "yanik": 0.487,
+    "cevre": 0.64,
+    "gorunur": 1.0
+   }
+  ]
+ },
+ {
+  "bas": "2021-08-04",
+  "son": "2021-08-07",
+  "tespit": 1048,
+  "hucre": 730,
+  "orman_payi": 0.958,
+  "il": "Muğla",
+  "ilce": "Menteşe",
+  "kutu": [
+   28.1937,
+   37.2672,
+   28.48124,
+   37.40102
+  ],
+  "id": "2021-08-04-mentese",
+  "once_tarih": "2021-08-02",
+  "sonra_tarih": "2021-08-12",
+  "once_gorunur": 1.0,
+  "sonra_gorunur": 0.998,
+  "yanik_ha": 8709,
+  "ham_yanik_ha": 8756,
+  "esik_ha": {
+   "genis": 11400,
+   "ana": 8756,
+   "orta_yuksek": 6450,
+   "yuksek": 4171
+  },
+  "gorunmez_oran": 0.003,
+  "arama_ha": 26308,
+  "cevre_piksel": 593016,
+  "gorsel_kutu": [
+   28.1627,
+   37.2448,
+   28.5126,
+   37.4236
+  ],
+  "gorsel_boyut": [
+   768,
+   507
+  ],
+  "yesillenme": [
+   {
+    "yil": 2020,
+    "tarih": "2020-07-28",
+    "yanik": 0.66,
+    "cevre": 0.652,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2021,
+    "tarih": "2021-08-12",
+    "hemen_sonra": true,
+    "yanik": 0.239,
+    "cevre": 0.655,
+    "gorunur": 0.998
+   },
+   {
+    "yil": 2022,
+    "tarih": "2022-08-02",
+    "yanik": 0.224,
+    "cevre": 0.649,
+    "gorunur": 0.998
+   },
+   {
+    "yil": 2023,
+    "tarih": "2023-08-02",
+    "yanik": 0.281,
+    "cevre": 0.66,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2024,
+    "tarih": "2024-07-27",
+    "yanik": 0.297,
+    "cevre": 0.658,
+    "gorunur": 0.998
+   },
+   {
+    "yil": 2025,
+    "tarih": "2025-07-29",
+    "yanik": 0.306,
+    "cevre": 0.649,
+    "gorunur": 0.998
+   },
+   {
+    "yil": 2026,
+    "tarih": "2026-08-01",
+    "yanik": 0.369,
+    "cevre": 0.665,
+    "gorunur": 1.0
+   }
+  ]
+ },
+ {
+  "bas": "2021-07-29",
+  "son": "2021-08-06",
+  "tespit": 838,
+  "hucre": 569,
+  "orman_payi": 0.996,
+  "il": "Antalya",
+  "ilce": "Gündoğmuş",
+  "kutu": [
+   31.8584,
+   36.69085,
+   32.0906,
+   36.81639
+  ],
+  "id": "2021-07-29-gundogmus",
+  "once_tarih": "2021-07-20",
+  "sonra_tarih": "2021-08-09",
+  "once_gorunur": 1.0,
+  "sonra_gorunur": 0.976,
+  "yanik_ha": 7439,
+  "ham_yanik_ha": 7540,
+  "esik_ha": {
+   "genis": 12584,
+   "ana": 7540,
+   "orta_yuksek": 3627,
+   "yuksek": 1576
+  },
+  "gorunmez_oran": 0.024,
+  "arama_ha": 21642,
+  "cevre_piksel": 473096,
+  "gorsel_kutu": [
+   31.8302,
+   36.666,
+   32.1189,
+   36.8416
+  ],
+  "gorsel_boyut": [
+   650,
+   480
+  ],
+  "yesillenme": [
+   {
+    "yil": 2020,
+    "tarih": "2020-07-20",
+    "yanik": 0.68,
+    "cevre": 0.673,
+    "gorunur": 0.997
+   },
+   {
+    "yil": 2021,
+    "tarih": "2021-08-09",
+    "hemen_sonra": true,
+    "yanik": 0.327,
+    "cevre": 0.668,
+    "gorunur": 0.976
+   },
+   {
+    "yil": 2022,
+    "tarih": "2022-07-20",
+    "yanik": 0.284,
+    "cevre": 0.644,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2023,
+    "tarih": "2023-07-20",
+    "yanik": 0.372,
+    "cevre": 0.665,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2024,
+    "tarih": "2024-07-29",
+    "yanik": 0.389,
+    "cevre": 0.668,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2025,
+    "tarih": "2025-07-19",
+    "yanik": 0.435,
+    "cevre": 0.663,
+    "gorunur": 0.997
+   },
+   {
+    "yil": 2026,
+    "tarih": "2026-07-19",
+    "yanik": 0.47,
+    "cevre": 0.68,
+    "gorunur": 1.0
+   }
+  ]
+ },
+ {
+  "bas": "2021-07-29",
+  "son": "2021-08-05",
+  "tespit": 789,
+  "hucre": 541,
+  "orman_payi": 0.984,
+  "il": "Muğla",
+  "ilce": "Marmaris",
+  "kutu": [
+   28.11901,
+   36.69938,
+   28.2827,
+   36.84515
+  ],
+  "id": "2021-07-29-marmaris",
+  "once_tarih": "2021-07-28",
+  "sonra_tarih": "2021-08-12",
+  "once_gorunur": 1.0,
+  "sonra_gorunur": 1.0,
+  "yanik_ha": 8823,
+  "ham_yanik_ha": 8865,
+  "esik_ha": {
+   "genis": 11210,
+   "ana": 8865,
+   "orta_yuksek": 6149,
+   "yuksek": 3417
+  },
+  "gorunmez_oran": 0.078,
+  "arama_ha": 18578,
+  "cevre_piksel": 240422,
+  "gorsel_kutu": [
+   28.0883,
+   36.6771,
+   28.3138,
+   36.8679
+  ],
+  "gorsel_boyut": [
+   497,
+   536
+  ],
+  "yesillenme": [
+   {
+    "yil": 2020,
+    "tarih": "2020-07-28",
+    "yanik": 0.724,
+    "cevre": 0.668,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2021,
+    "tarih": "2021-08-12",
+    "hemen_sonra": true,
+    "yanik": 0.308,
+    "cevre": 0.668,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2022,
+    "tarih": "2022-07-28",
+    "yanik": 0.271,
+    "cevre": 0.554,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2023,
+    "tarih": "2023-07-28",
+    "yanik": 0.347,
+    "cevre": 0.548,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2024,
+    "tarih": "2024-07-27",
+    "yanik": 0.375,
+    "cevre": 0.571,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2025,
+    "tarih": "2025-07-27",
+    "yanik": 0.43,
+    "cevre": 0.602,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2026,
+    "tarih": "2026-07-24",
+    "yanik": 0.456,
+    "cevre": 0.602,
+    "gorunur": 1.0
+   }
+  ]
+ },
+ {
+  "bas": "2021-08-01",
+  "son": "2021-08-07",
+  "tespit": 674,
+  "hucre": 519,
+  "orman_payi": 0.955,
+  "il": "Muğla",
+  "ilce": "Milas",
+  "kutu": [
+   27.66059,
+   37.00005,
+   27.9089,
+   37.09644
+  ],
+  "id": "2021-08-01-milas",
+  "once_tarih": "2021-07-31",
+  "sonra_tarih": "2021-08-10",
+  "once_gorunur": 1.0,
+  "sonra_gorunur": 1.0,
+  "yanik_ha": 12605,
+  "ham_yanik_ha": 12632,
+  "esik_ha": {
+   "genis": 14940,
+   "ana": 12632,
+   "orta_yuksek": 9852,
+   "yuksek": 5811
+  },
+  "gorunmez_oran": 0.031,
+  "arama_ha": 21133,
+  "cevre_piksel": 217687,
+  "gorsel_kutu": [
+   27.6314,
+   36.9773,
+   27.9386,
+   37.1191
+  ],
+  "gorsel_boyut": [
+   680,
+   399
+  ],
+  "yesillenme": [
+   {
+    "yil": 2020,
+    "tarih": "2020-07-31",
+    "yanik": 0.644,
+    "cevre": 0.688,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2021,
+    "tarih": "2021-08-10",
+    "hemen_sonra": true,
+    "yanik": 0.222,
+    "cevre": 0.676,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2022,
+    "tarih": "2022-07-31",
+    "yanik": 0.247,
+    "cevre": 0.649,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2023,
+    "tarih": "2023-07-31",
+    "yanik": 0.352,
+    "cevre": 0.674,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2024,
+    "tarih": "2024-07-30",
+    "yanik": 0.379,
+    "cevre": 0.654,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2025,
+    "tarih": "2025-08-01",
+    "yanik": 0.427,
+    "cevre": 0.689,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2026,
+    "tarih": "2026-07-30",
+    "yanik": 0.448,
+    "cevre": 0.677,
+    "gorunur": 1.0
+   }
+  ]
+ },
+ {
+  "bas": "2021-07-29",
+  "son": "2021-08-12",
+  "tespit": 602,
+  "hucre": 392,
+  "orman_payi": 0.953,
+  "il": "Muğla",
+  "ilce": "Köyceğiz",
+  "kutu": [
+   28.72493,
+   36.94872,
+   28.91719,
+   37.06525
+  ],
+  "id": "2021-07-29-koycegiz",
+  "once_tarih": "2021-07-28",
+  "sonra_tarih": "2021-08-17",
+  "once_gorunur": 1.0,
+  "sonra_gorunur": 1.0,
+  "yanik_ha": 4335,
+  "ham_yanik_ha": 4411,
+  "esik_ha": {
+   "genis": 8010,
+   "ana": 4411,
+   "orta_yuksek": 1859,
+   "yuksek": 717
+  },
+  "gorunmez_oran": 0.0,
+  "arama_ha": 14261,
+  "cevre_piksel": 458322,
+  "gorsel_kutu": [
+   28.6934,
+   36.9263,
+   28.9494,
+   37.0873
+  ],
+  "gorsel_boyut": [
+   561,
+   458
+  ],
+  "yesillenme": [
+   {
+    "yil": 2020,
+    "tarih": "2020-07-28",
+    "yanik": 0.653,
+    "cevre": 0.647,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2021,
+    "tarih": "2021-08-17",
+    "hemen_sonra": true,
+    "yanik": 0.33,
+    "cevre": 0.646,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2022,
+    "tarih": "2022-07-28",
+    "yanik": 0.241,
+    "cevre": 0.62,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2023,
+    "tarih": "2023-07-28",
+    "yanik": 0.29,
+    "cevre": 0.644,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2024,
+    "tarih": "2024-07-27",
+    "yanik": 0.292,
+    "cevre": 0.647,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2025,
+    "tarih": "2025-07-27",
+    "yanik": 0.31,
+    "cevre": 0.639,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2026,
+    "tarih": "2026-07-27",
+    "yanik": 0.344,
+    "cevre": 0.61,
+    "gorunur": 1.0
+   }
+  ]
+ },
+ {
+  "bas": "2025-07-23",
+  "son": "2025-07-27",
+  "tespit": 390,
+  "hucre": 253,
+  "orman_payi": 0.967,
+  "il": "Karabük",
+  "ilce": "Merkez",
+  "kutu": [
+   32.67855,
+   41.04683,
+   32.83963,
+   41.13607
+  ],
+  "id": "2025-07-23-merkez",
+  "once_tarih": "2025-07-16",
+  "sonra_tarih": "2025-08-08",
+  "once_gorunur": 1.0,
+  "sonra_gorunur": 0.954,
+  "yanik_ha": 4199,
+  "ham_yanik_ha": 4228,
+  "esik_ha": {
+   "genis": 6425,
+   "ana": 4228,
+   "orta_yuksek": 2707,
+   "yuksek": 1489
+  },
+  "gorunmez_oran": 0.046,
+  "arama_ha": 10938,
+  "cevre_piksel": 304702,
+  "gorsel_kutu": [
+   32.6486,
+   41.0238,
+   32.8696,
+   41.1594
+  ],
+  "gorsel_boyut": [
+   930,
+   750
+  ],
+  "yesillenme": [
+   {
+    "yil": 2024,
+    "tarih": "2024-07-09",
+    "yanik": 0.699,
+    "cevre": 0.709,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2025,
+    "tarih": "2025-08-08",
+    "hemen_sonra": true,
+    "yanik": 0.223,
+    "cevre": 0.655,
+    "gorunur": 0.954
+   },
+   {
+    "yil": 2026,
+    "tarih": "2026-07-21",
+    "yanik": 0.339,
+    "cevre": 0.726,
+    "gorunur": 1.0
+   }
+  ]
+ },
+ {
+  "bas": "2025-08-13",
+  "son": "2025-08-18",
+  "tespit": 325,
+  "hucre": 252,
+  "orman_payi": 0.886,
+  "il": "Mersin",
+  "ilce": "Silifke",
+  "kutu": [
+   33.69151,
+   36.2402,
+   33.84256,
+   36.34994
+  ],
+  "id": "2025-08-13-silifke",
+  "once_tarih": "2025-08-12",
+  "sonra_tarih": "2025-08-22",
+  "once_gorunur": 1.0,
+  "sonra_gorunur": 0.971,
+  "yanik_ha": 3840,
+  "ham_yanik_ha": 3863,
+  "esik_ha": {
+   "genis": 5513,
+   "ana": 3863,
+   "orta_yuksek": 1959,
+   "yuksek": 656
+  },
+  "gorunmez_oran": 0.029,
+  "arama_ha": 10774,
+  "cevre_piksel": 115223,
+  "gorsel_kutu": [
+   33.662,
+   36.2177,
+   33.872,
+   36.3727
+  ],
+  "gorsel_boyut": [
+   936,
+   867
+  ],
+  "yesillenme": [
+   {
+    "yil": 2024,
+    "tarih": "2024-08-15",
+    "yanik": 0.533,
+    "cevre": 0.559,
+    "gorunur": 0.999
+   },
+   {
+    "yil": 2025,
+    "tarih": "2025-08-22",
+    "hemen_sonra": true,
+    "yanik": 0.187,
+    "cevre": 0.539,
+    "gorunur": 0.971
+   },
+   {
+    "yil": 2026,
+    "tarih": "2026-08-10",
+    "yanik": 0.204,
+    "cevre": 0.565,
+    "gorunur": 1.0
+   }
+  ]
+ },
+ {
+  "bas": "2025-06-27",
+  "son": "2025-06-29",
+  "tespit": 362,
+  "hucre": 241,
+  "orman_payi": 0.892,
+  "il": "Bilecik",
+  "ilce": "Gölpazarı",
+  "kutu": [
+   30.34065,
+   40.29946,
+   30.44459,
+   40.40342
+  ],
+  "id": "2025-06-27-golpazari",
+  "once_tarih": "2025-06-19",
+  "sonra_tarih": "2025-07-02",
+  "once_gorunur": 1.0,
+  "sonra_gorunur": 0.983,
+  "yanik_ha": 4799,
+  "ham_yanik_ha": 4815,
+  "esik_ha": {
+   "genis": 6296,
+   "ana": 4815,
+   "orta_yuksek": 3351,
+   "yuksek": 1825
+  },
+  "gorunmez_oran": 0.017,
+  "arama_ha": 10143,
+  "cevre_piksel": 256804,
+  "gorsel_kutu": [
+   30.3118,
+   40.2737,
+   30.4732,
+   40.4292
+  ],
+  "gorsel_boyut": [
+   711,
+   843
+  ],
+  "yesillenme": [
+   {
+    "yil": 2024,
+    "tarih": "2024-06-17",
+    "yanik": 0.673,
+    "cevre": 0.643,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2025,
+    "tarih": "2025-07-02",
+    "hemen_sonra": true,
+    "yanik": 0.272,
+    "cevre": 0.612,
+    "gorunur": 0.983
+   },
+   {
+    "yil": 2026,
+    "tarih": "2026-06-17",
+    "yanik": 0.4,
+    "cevre": 0.674,
+    "gorunur": 1.0
+   }
+  ]
+ },
+ {
+  "bas": "2020-09-05",
+  "son": "2020-09-09",
+  "tespit": 246,
+  "hucre": 191,
+  "orman_payi": 0.935,
+  "il": "Hatay",
+  "ilce": "Antakya",
+  "kutu": [
+   35.96735,
+   36.18709,
+   36.08977,
+   36.29305
+  ],
+  "id": "2020-09-05-antakya",
+  "once_tarih": "2020-08-28",
+  "sonra_tarih": "2020-09-12",
+  "once_gorunur": 1.0,
+  "sonra_gorunur": 1.0,
+  "yanik_ha": 3081,
+  "ham_yanik_ha": 3089,
+  "esik_ha": {
+   "genis": 3746,
+   "ana": 3089,
+   "orta_yuksek": 2459,
+   "yuksek": 1609
+  },
+  "gorunmez_oran": 0.002,
+  "arama_ha": 8438,
+  "cevre_piksel": 362856,
+  "gorsel_kutu": [
+   35.9403,
+   36.1604,
+   36.1172,
+   36.3195
+  ],
+  "gorsel_boyut": [
+   822,
+   858
+  ],
+  "yesillenme": [
+   {
+    "yil": 2019,
+    "tarih": "2019-09-03",
+    "yanik": 0.74,
+    "cevre": 0.649,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2020,
+    "tarih": "2020-09-12",
+    "hemen_sonra": true,
+    "yanik": 0.205,
+    "cevre": 0.584,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2021,
+    "tarih": "2021-08-28",
+    "yanik": 0.388,
+    "cevre": 0.659,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2022,
+    "tarih": "2022-08-28",
+    "yanik": 0.492,
+    "cevre": 0.654,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2023,
+    "tarih": "2023-08-23",
+    "yanik": 0.509,
+    "cevre": 0.619,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2024,
+    "tarih": "2024-09-06",
+    "yanik": 0.634,
+    "cevre": 0.662,
+    "gorunur": 0.996
+   },
+   {
+    "yil": 2025,
+    "tarih": "2025-08-27",
+    "yanik": 0.532,
+    "cevre": 0.582,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2026,
+    "tarih": "2026-08-27",
+    "yanik": 0.662,
+    "cevre": 0.665,
+    "gorunur": 1.0
+   }
+  ]
+ },
+ {
+  "bas": "2021-07-28",
+  "son": "2021-08-01",
+  "tespit": 272,
+  "hucre": 190,
+  "orman_payi": 0.956,
+  "il": "Mersin",
+  "ilce": "Aydıncık",
+  "kutu": [
+   33.22298,
+   36.13086,
+   33.29761,
+   36.24721
+  ],
+  "id": "2021-07-28-aydincik",
+  "once_tarih": "2021-07-27",
+  "sonra_tarih": "2021-08-06",
+  "once_gorunur": 0.998,
+  "sonra_gorunur": 1.0,
+  "yanik_ha": 2626,
+  "ham_yanik_ha": 2655,
+  "esik_ha": {
+   "genis": 4233,
+   "ana": 2655,
+   "orta_yuksek": 941,
+   "yuksek": 182
+  },
+  "gorunmez_oran": 0.064,
+  "arama_ha": 7691,
+  "cevre_piksel": 104915,
+  "gorsel_kutu": [
+   33.1944,
+   36.108,
+   33.3264,
+   36.27
+  ],
+  "gorsel_boyut": [
+   591,
+   900
+  ],
+  "yesillenme": [
+   {
+    "yil": 2020,
+    "tarih": "2020-07-27",
+    "yanik": 0.551,
+    "cevre": 0.598,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2021,
+    "tarih": "2021-08-06",
+    "hemen_sonra": true,
+    "yanik": 0.247,
+    "cevre": 0.542,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2022,
+    "tarih": "2022-07-27",
+    "yanik": 0.209,
+    "cevre": 0.559,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2023,
+    "tarih": "2023-07-27",
+    "yanik": 0.247,
+    "cevre": 0.558,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2024,
+    "tarih": "2024-07-31",
+    "yanik": 0.267,
+    "cevre": 0.586,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2025,
+    "tarih": "2025-07-26",
+    "yanik": 0.271,
+    "cevre": 0.536,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2026,
+    "tarih": "2026-07-26",
+    "yanik": 0.318,
+    "cevre": 0.606,
+    "gorunur": 1.0
+   }
+  ]
+ },
+ {
+  "bas": "2020-08-23",
+  "son": "2020-08-26",
+  "tespit": 295,
+  "hucre": 189,
+  "orman_payi": 0.861,
+  "il": "Adana",
+  "ilce": "Kozan",
+  "kutu": [
+   35.91378,
+   37.52224,
+   35.98341,
+   37.65998
+  ],
+  "id": "2020-08-23-kozan",
+  "once_tarih": "2020-08-18",
+  "sonra_tarih": "2020-09-07",
+  "once_gorunur": 1.0,
+  "sonra_gorunur": 1.0,
+  "yanik_ha": 2134,
+  "ham_yanik_ha": 2150,
+  "esik_ha": {
+   "genis": 3194,
+   "ana": 2150,
+   "orta_yuksek": 1263,
+   "yuksek": 521
+  },
+  "gorunmez_oran": 0.002,
+  "arama_ha": 7720,
+  "cevre_piksel": 300360,
+  "gorsel_kutu": [
+   35.879,
+   37.5004,
+   36.0186,
+   37.6818
+  ],
+  "gorsel_boyut": [
+   293,
+   513
+  ],
+  "yesillenme": [
+   {
+    "yil": 2019,
+    "tarih": "2019-08-24",
+    "yanik": 0.738,
+    "cevre": 0.732,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2020,
+    "tarih": "2020-09-07",
+    "hemen_sonra": true,
+    "yanik": 0.219,
+    "cevre": 0.669,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2021,
+    "tarih": "2021-08-18",
+    "yanik": 0.353,
+    "cevre": 0.693,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2022,
+    "tarih": "2022-08-28",
+    "yanik": 0.483,
+    "cevre": 0.69,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2023,
+    "tarih": "2023-08-18",
+    "yanik": 0.543,
+    "cevre": 0.67,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2024,
+    "tarih": "2024-08-17",
+    "yanik": 0.616,
+    "cevre": 0.696,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2025,
+    "tarih": "2025-08-19",
+    "yanik": 0.55,
+    "cevre": 0.643,
+    "gorunur": 1.0
+   },
+   {
+    "yil": 2026,
+    "tarih": "2026-08-22",
+    "yanik": 0.703,
+    "cevre": 0.712,
+    "gorunur": 1.0
+   }
+  ]
+ }
+]

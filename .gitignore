@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+veri/ham/
+veri/tespitler.csv
+veri/olay_adaylari.json
+veri/uydu.log
+*.tmp
