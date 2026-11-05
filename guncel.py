@@ -3,7 +3,7 @@
 1) Anahtarsız: FIRMS'in herkese açık "son 7 gün" bölge dosyaları (Avrupa + Rusya/Asya;
    Türkiye ikisinin sınırında). Her gün çalıştırılırsa kayıp olmadan birikir.
 2) FIRMS_MAP_KEY varsa (ortam değişkeni ya da .env): yılbaşından bugüne boşlukları
-   FIRMS API'nin ülke uç noktasıyla 10 günlük parçalar halinde doldurur.
+   FIRMS API'nin alan uç noktasıyla 5 günlük parçalar halinde doldurur.
 
 Anahtar ücretsizdir: https://firms.modaps.eosdis.nasa.gov/api/map_key/
 """
@@ -20,7 +20,9 @@ ACIK = {
     "M": ["https://firms.modaps.eosdis.nasa.gov/data/active_fire/modis-c6.1/csv/MODIS_C6_1_Europe_7d.csv",
           "https://firms.modaps.eosdis.nasa.gov/data/active_fire/modis-c6.1/csv/MODIS_C6_1_Russia_Asia_7d.csv"],
 }
-API = "https://firms.modaps.eosdis.nasa.gov/api/country/csv/{key}/{src}/TUR/{gun}/{tarih}"
+# Ülke uç noktası (country/…/TUR) 2026 sonbaharında "Invalid API call" vermeye başladı; alan uç noktası en fazla 5 gün alıyor.
+API = "https://firms.modaps.eosdis.nasa.gov/api/area/csv/{key}/{src}/25.5,35.75,45,42.25/{gun}/{tarih}"
+PARCA_GUN = 5
 API_KAYNAK = {"V": ["VIIRS_SNPP_SP", "VIIRS_SNPP_NRT"], "M": ["MODIS_SP", "MODIS_NRT"]}
 # Türkiye'yi kapsayan kutu; komşu ülke noktaları sonra il atamasında elenir
 KUTU = (25.5, 35.75, 45.0, 42.25)
@@ -99,20 +101,23 @@ def main():
         bugun = dt.date.today()
         b = dt.date(yil, 1, 1)
         while b <= bugun:
-            son = min(bugun, b + dt.timedelta(days=9))
+            son = min(bugun, b + dt.timedelta(days=PARCA_GUN - 1))
             gun = (son - b).days + 1
             for k, kaynaklar in API_KAYNAK.items():
                 ad = f"{k}:{b.isoformat()}"
                 # tamamlanmış parça (bugünden en az 10 gün önce bitmiş) tekrar çekilmez
                 if parca.get(ad) == "tamam":
                     continue
+                cevap_geldi = False
                 for src in kaynaklar:
                     m = getir(API.format(key=key, src=src, gun=gun, tarih=b.isoformat()))
+                    cevap_geldi = cevap_geldi or m is not None
                     s = cevir(m, k) if m else []
                     if s:
                         yeni += s
                         break
-                if (bugun - son).days >= 10:
+                # yalnız gerçekten cevap alınan ve bugünden en az 10 gün önce bitmiş parça kapanır
+                if cevap_geldi and (bugun - son).days >= 10:
                     parca[ad] = "tamam"
             b = son + dt.timedelta(days=1)
         json.dump(parca, open(PARCALAR, "w"), indent=0, sort_keys=True)
